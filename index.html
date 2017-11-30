@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="clock.js"></script>
+</head>
+
+<body>
+ 
+  <div class = "js-app"></div>
+  
+  <script>
+    let clock = new Clock(document.createElement('div'),
+        { tz:3,
+          timezone:'My'
+        });
+      
+    let clockRio = new Clock(document.createElement('div'),
+      { tz:-2,
+        timezone:'Rio'
+      });
+      
+    let clockTokio = new Clock(document.createElement('div'),
+      { tz:9,
+        timezone:'Tokio'
+      });
+        
+    document.querySelector('.js-app').append(clock.el);
+    document.querySelector('.js-app').append(clockRio.el);
+    document.querySelector('.js-app').append(clockTokio.el);
+    
+    clock.start();
+    clockRio.start();
+    clockTokio.start();
+  </script>
+
+</body>
+
+</html>

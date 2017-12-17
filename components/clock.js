@@ -9,7 +9,7 @@
           //create object with data for render()
           this.data = Object.assign({
             tz:0,
-            timezone:'',
+            timezone:' ',
             hh: 0,
             mm: 0,
             ss: 0
@@ -22,9 +22,9 @@
         render() {
           this.el.innerHTML = `
             <div>
-              ${this.data.timezone}:<span class = "hours">${this.data.hh}</span>
-              :<span class = "mins">${this.data.mm}</span>
-              :<span class = "secs">${this.data.ss}</span>
+              <span class = "tz">${this.data.timezone}</span>: <span class = "hours">${this.data.hh}</span>
+              : <span class = "mins">${this.data.mm}</span>
+              : <span class = "secs">${this.data.ss}</span>
             </div>
           `;
         }

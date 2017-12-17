@@ -1,9 +1,15 @@
 .hours{
-     color:red;
-   }
-   .mins{
-     color:blue;
-   }
-   .secs{
-     color:green;
-   }
+	color:red;
+	font-size: 21px;
+}
+.mins{
+    color:blue;
+    font-size: 21px;
+}
+.secs{
+    color:green;
+    font-size: 21px;
+}
+.tz{
+   	font-size: 21px;
+}
